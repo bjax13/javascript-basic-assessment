@@ -159,7 +159,7 @@ function makeChatMessage(message, author) {
 	return {
 		message:message,
 		author:author,
-		timestamp: Date.now()
+		timestamp: new Date()
 	}
 }
 
