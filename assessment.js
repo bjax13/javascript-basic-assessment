@@ -41,7 +41,7 @@ var myOtherShirt = {
 	color: 'red'
 };
 
-myShirt['type'] = 'spandex';
+myOtherShirt['type'] = 'spandex';
 
 // #5 Create an object that tracks a count of animals in a zoo.  Call it 'zoo'
 // The key should be the animal name(string) and the value should be how many there are.
@@ -65,15 +65,15 @@ var snake = {
 };
 
 for (var snakeKey in snake) {
-	arr = snakeKey.split();
+	arr = snakeKey.split('');
 	if (arr[0]=== 's') {
-		snakeKey == 's'
+		snake[snakeKey] = 's'
 	}
 };
 
 //#7 Create an array of strings that are the 7 primary colors in the rainbow - red, orange, yellow, green, blue, indigo, violet (lower-case). Call your array rainbowColors
 
-var arr = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 
 // #8 Using this array do the following
@@ -155,7 +155,7 @@ function makeChatMessage(message, author) {
 	return {
 		message:message,
 		author:author,
-		timestamp: Date.now();
+		timestamp: Date.now()
 	}
 }
 
