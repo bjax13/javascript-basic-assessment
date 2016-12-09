@@ -127,7 +127,7 @@ function removeItem(arr, str) {
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
 
 function doubleTheFun(param) {
-	console.log(parseFloat(param));
+	//console.log(parseFloat(param));
 	if (parseFloat(param) && typeof param === "string") {
 		return parseFloat(param) + parseFloat(param)
 	}
@@ -171,17 +171,16 @@ function coderTest(object) {
 	for (var key in object) {
 		if (object.hasOwnProperty(key)) {
 			if(key === 'name'){
-				if (obj[key]==='Jeremy') {
-					obj.lovesCode = 10
-				}else if (obj[key]=== 'Brack') {
-					obj.lovesCode = 0
+				if (object[key]==='Jeremy') {
+					object.lovesCode = 10
+				}else if (object[key]=== 'Brack') {
+					object.lovesCode = 0
 				}else {
-					obj.lovesCode = 5
+					object.lovesCode = 5
 				}
 			}
 		}
 	}
-
 }
 
 // #15 Create a function called outside that takes in a temperature (number), a humidity(number), and a cloudiness(number), in that order. Using the following to return the correct values
@@ -213,6 +212,6 @@ function outside(temperature,humidity,cloudiness) {
 // example - If I call you with 'Give it' you should invoke holla with 'Give it back'
 
 function callerBack(holla, back) {
-	holla(back); + + ' back';
+	return holla(back+ ' back') ;
 
 }
