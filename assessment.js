@@ -89,7 +89,7 @@ heroes.unshift('spongebob');
 
 // remove 'flash' from the array and store him in a variable called secondHero
 
-var secondHero = heroes.splice(1,1);
+var secondHero = heroes.splice(heroes.indexOf('flash'),1);
 
 // leave batman in the array but put a copy of him on a variable called thirdHero
 
@@ -127,6 +127,10 @@ function removeItem(arr, str) {
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
 
 function doubleTheFun(param) {
+	console.log(parseFloat(param));
+	if (parseFloat(param) && typeof param === "string") {
+		return parseFloat(param) + parseFloat(param)
+	}
 	return param + param;
 
 }
